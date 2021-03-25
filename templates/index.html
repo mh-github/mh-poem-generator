@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .inputstl { 
+            padding: 9px; 
+            border: solid 1px #4B718B; 
+            outline: 0; 
+            background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #CDDBE4), to(#FFFFFF)); 
+            background: -moz-linear-gradient(top, #FFFFFF, #CDDBE4 1px, #FFFFFF 25px); 
+            box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+            -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+            -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+        }
+
+        .text-responsive {
+            font-size: calc(100% + 1vw + 1vh);
+        }
+    </style>
+    <!-- Add Bootstrap Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body style="background-color: rgb(255, 215, 0);">
+    <div class="container">
+        <div class="row center">
+            <div id="poem_container"></div>
+            <script type="text/babel" src="../static/Poem.js"></script>
+        </div>  
+    </div>
+</body>
+
+</html>
